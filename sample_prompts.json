@@ -1,0 +1,112 @@
+[
+    {
+        "animal1": "Sheep",
+        "animal2": "Boar",
+        "action": "attacking",
+        "phrase": "a Sheep attacking a Boar",
+        "plausibility": "Highly Plausible Actions",
+        "spatial": "A sheep aggressively charges forward, head lowered, toward the side of a slightly larger boar, emphasizing their confrontation and contrasting their sizes.",
+        "temporal": "A sheep leaping forward with head lowered, wool bristling, aiming to clash with a boar's side. The boar, leaning away, hooves digging in, eyes alert, bracing the impact.",
+        "emotional": "An aggressive sheep with narrowed eyes and bared teeth charges at a boar, its hooves kicking up dirt as it lowers its head. The boar stands firm, eyes wide with a mix of defiance and surprise, bracing with its tusks forward.",
+        "id": "1"
+    },
+    {
+        "animal1": "Snake",
+        "animal2": "Possum",
+        "action": "attacking",
+        "phrase": "a Snake attacking a Possum",
+        "plausibility": "Highly Plausible Actions",
+        "spatial": "A snake coils tightly around a struggling possum, its head poised for a strike above the possum's body, emphasizing their tense encounter. The possum, smaller in size, appears ensnared mid-ground, with the snake's elongated form curling into the scene's foreground.",
+        "temporal": "A snake lunging forward with fangs bared, its body coiled tightly and muscles rippling, aimed directly at a possum in mid-dodge, its eyes wide and body arched, trying to evade the strike.",
+        "emotional": "A fierce snake with flared hood and narrowed eyes coils tightly around a frightened possum, whose eyes are wide with terror and body tensed in a desperate attempt to escape.",
+        "id": "2"
+    },
+    {
+        "animal1": "Civet cat",
+        "animal2": "Chicken",
+        "action": "attacking",
+        "phrase": "a Civet cat attacking a Chicken",
+        "plausibility": "Highly Plausible Actions",
+        "spatial": "A Civet cat aggressively lunges forward, its claws extended towards the foreground, where the Chicken flutters upward in alarm. The Chicken is slightly smaller in scale, emphasizing the imminent threat from the larger Civet cat.",
+        "temporal": "A Civet cat mid-leap with its claws outstretched and mouth open, targeting a chicken flapping its wings frantically to escape, feathers scattering in the air.",
+        "emotional": "A fierce civet cat with bared teeth and narrowed eyes leaps towards a frightened chicken. The civet's body is tense, muscles coiled in mid-air, while the chicken flaps its wings frantically, eyes wide in sheer panic.",
+        "id": "3"
+    },
+    {
+        "animal1": "Guinea pig",
+        "animal2": "Hog",
+        "action": "attacking",
+        "phrase": "a Guinea pig attacking a Hog",
+        "plausibility": "Highly Plausible Actions",
+        "spatial": "A small guinea pig aggressively charges at a significantly larger hog, its tiny form in stark contrast to the hog\u2019s bulk, illustrating determination despite the vast size difference.",
+        "temporal": "A Guinea pig with forward-leaning posture and bared teeth lunging towards a Hog, whose eyes widen in surprise, capturing the instant before impact.",
+        "emotional": "A fierce guinea pig with narrowed eyes and bared teeth charges at a startled hog, whose eyes are wide with surprise and ears perked up, ready to retreat.",
+        "id": "4"
+    },
+    {
+        "animal1": "Moose",
+        "animal2": "Duck",
+        "action": "attacking",
+        "phrase": "a Moose attacking a Duck",
+        "plausibility": "Highly Plausible Actions",
+        "spatial": "A massive moose charges at a much smaller duck, with the duck flapping just above the ground, its wings spread wide in a desperate attempt to evade the towering moose's antlers. The ground beneath them shows the moose's powerful hooves kicking up dust, emphasizing the dynamic action.",
+        "temporal": "A moose mid-charge with head lowered and antlers poised, fiercely advancing towards a startled duck flapping its wings in a frantic attempt to escape.",
+        "emotional": "A fierce moose with flared nostrils and widened eyes charges forward, its antlers lowered aggressively, while a duck flaps its wings frantically, eyes wide with panic, attempting to take flight.",
+        "id": "5"
+    },
+    {
+        "animal1": "Kangaroo",
+        "animal2": "Racoon",
+        "action": "chasing",
+        "phrase": "a Kangaroo chasing a Racoon",
+        "plausibility": "Highly Plausible Actions",
+        "spatial": "A large kangaroo actively pursues a smaller raccoon, bounding over the grassy landscape. The kangaroo, in mid-leap, towers in the foreground, while the raccoon scampers ahead, its smaller form nearer to the horizon, emphasizing their dynamic chase against the sprawling terrain.",
+        "temporal": "A kangaroo mid-hop with powerful legs coiled and tail extended for balance, eyes locked on a raccoon darting ahead with its bushy tail trailing, expressing a rapid pursuit through the brush.",
+        "emotional": "A determined kangaroo with narrowed eyes and powerful leaps chases after a raccoon, whose eyes gleam with excitement as it scampers away, its body agile and tail flicking playfully.",
+        "id": "6"
+    },
+    {
+        "animal1": "Camel",
+        "animal2": "Badger",
+        "action": "chasing",
+        "phrase": "a Camel chasing a Badger",
+        "plausibility": "Highly Plausible Actions",
+        "spatial": "A large camel in the foreground lunges forward with a long stride, towering over a much smaller badger scurrying away ahead. The camera angle captures the scene from a low perspective, emphasizing the camel's size as it dominates the background, while the badger appears smaller and close to the ground, creating a dynamic chase scene.",
+        "temporal": "A camel, neck extended and legs reaching forward in a full gallop, pursues a badger that darts swiftly with body low to the ground, claws digging in as it evades capture.",
+        "emotional": "A determined camel with narrowed eyes and flared nostrils charges forward, while a startled badger, ears pinned back and eyes wide with alarm, scampers ahead, its body low to the ground, glancing anxiously behind.",
+        "id": "7"
+    },
+    {
+        "animal1": "Oppossum",
+        "animal2": "Bear",
+        "action": "chasing",
+        "phrase": "an Oppossum chasing a Bear",
+        "plausibility": "Highly Plausible Actions",
+        "spatial": "A small opossum scurries after a large bear, emphasizing their size disparity, with the bear's powerful frame leading and the opossum trailing closely behind, set against a forest backdrop that shows the contrast in scale and power.",
+        "temporal": "A determined opossum mid-leap, with claws outstretched and fur bristled, closely pursuing a startled bear caught mid-turn, its eyes wide and paws lifting in surprise, against a vibrant forest backdrop.",
+        "emotional": "An enthusiastic opossum with wide, eager eyes and a determined stride chases after a bear. The bear, surprised and comically taken aback, glances over its shoulder with a mixture of confusion and mild alarm, its ears perked up and fur slightly ruffled.",
+        "id": "8"
+    },
+    {
+        "animal1": "Cat",
+        "animal2": "Loris",
+        "action": "chasing",
+        "phrase": "a Cat chasing a Loris",
+        "plausibility": "Highly Plausible Actions",
+        "spatial": "A nimble cat races after a loris, the cat in mid-leap with its front paws outstretched, aiming towards the loris, which is positioned just ahead and slightly lower, turning its head back in the dense undergrowth.",
+        "temporal": "A cat mid-leap with paws outstretched and eyes focused, lunging at a loris darting away on slender limbs, its large eyes wide with urgency.",
+        "emotional": "A determined cat with intense, focused eyes sprints after a loris, whose wide eyes show a mix of fear and surprise as it scampers away, arms raised for balance.",
+        "id": "9"
+    },
+    {
+        "animal1": "Rhinoceros",
+        "animal2": "Hog",
+        "action": "chasing",
+        "phrase": "a Rhinoceros chasing a Hog",
+        "plausibility": "Highly Plausible Actions",
+        "spatial": "A robust rhinoceros charges forward, its massive form dominating the scene, while a nimble hog scurries ahead in the foreground, highlighting their dynamic size difference and urgent motion.",
+        "temporal": "A rhinoceros mid-gallop with dust trailing behind its hooves, horn poised forward, intensely pursuing a hog in a full-speed dash, ears back and legs stretched out.",
+        "emotional": "A determined rhinoceros with narrowed eyes and flared nostrils charges forward, its head low and powerful muscles rippling. In front, a panicked hog with wide eyes and ears pinned back, sprints desperately, its body low to the ground in sheer terror.",
+        "id": "10"
+    }
+]
