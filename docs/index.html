@@ -3,26 +3,352 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AcT2I — Project Page</title>
-  <meta name="robots" content="noindex" />
-  <style>
-    html, body { height: 100%; margin: 0; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: #0b1220; color: #e5e7eb; }
-    .wrap { min-height: 100%; display: grid; place-items: center; text-align: center; padding: 2rem; }
-    .card { max-width: 720px; background: #0f172a; border: 1px solid #1f2a44; border-radius: 14px; padding: 2rem; box-shadow: 0 8px 30px rgba(0,0,0,0.3); }
-    h1 { font-size: 1.6rem; margin: 0 0 0.5rem; }
-    p { line-height: 1.6; color: #a5b4fc; }
-    code { background: #111827; padding: 0.2rem 0.4rem; border-radius: 6px; color: #93c5fd; }
-    .meta { margin-top: 1rem; font-size: 0.9rem; color: #94a3b8; }
-  </style>
+  <meta name="description" content="AcT2I: Evaluating and Improving Action Depiction in Text-to-Image Models" />
+  <meta name="keywords" content="Text-to-Image, Action Depiction, T2I, Diffusion Models" />
+  <title>AcT2I: Evaluating and Improving Action Depiction in Text-to-Image Models</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
 </head>
 <body>
-  <main class="wrap">
-    <div class="card">
-      <h1>AcT2I — Project Page</h1>
-      <p>This repository hosts the official project page for <strong>AcT2I</strong>. Code and Supplementary Materials will be released soon.</p>
-      <p class="meta">Check back shortly or watch this repository for updates. The site is served from the <code>docs/</code> directory via GitHub Pages.</p>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">AcT2I: Evaluating and Improving Action Depiction in Text-to-Image Models</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://github.com/Vatsal-Malaviya">Vatsal Malaviya</a>,</span>
+              <span class="author-block">
+                <a href="https://agneetchatterjee.com/">Agneet Chatterjee</a>,</span>
+              <span class="author-block">
+                <a href="https://maitreyapatel.com/">Maitreya Patel</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=k2suuZgAAAAJ&hl=en">Yezhou Yang</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=9Yd716IAAAAJ&hl=en">Chitta Baral</a>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Arizona State University</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2509.16141v1" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2509.16141" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="ai ai-arxiv"></i></span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://huggingface.co/papers/2509.16141" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-database"></i></span>
+                    <span>Assets & Datasets</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://github.com/Vatsal-Malaviya/AcT2I" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </main>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">TL;DR</h2>
+      <div class="content has-text-justified">
+        <p>
+          Text-to-Image models excel at 1-hop composition but often miss <em>who-does-what-to-whom</em>.
+          We contribute two parts: <br>(1) <strong>AcT2I</strong>, an action-centric benchmark with <strong>125</strong> prompts (25 actions × 100 animals)
+          that stresses relational reasoning and on which the best model (SD-3.5 Large) reaches only <strong>48%</strong> human acceptance. <br>
+          (2) <strong>LLM-guided Knowledge Distillation</strong>, a training-free technique that augments prompts with temporal, spatial, and emotional cues,
+          yielding large gains (e.g., SD-3.5 Large <strong>+73%</strong>).
+        </p>
+      </div>
+      <div class="columns is-multiline is-vcentered">
+        <div class="column is-4 has-text-centered">
+          <figure>
+            <img src="./static/images/acceptance_model_legend.png" alt="Action depiction performance across models on AcT2I" style="max-width:720px;width:100%;height:auto;">
+            <figcaption>Current SOTA performance on AcT2I — best <strong>48%</strong> acceptance; substantial headroom.</figcaption>
+          </figure>
+        </div>
+        <div class="column is-8 has-text-centered">
+          <figure>
+            <img src="./static/images/teaser.png" alt="Knowledge Distillation teaser" style="max-width:720px;width:100%;height:auto;">
+            <figcaption>LLM-guided Knowledge Distillation (training-free) — use it to stress-test and improve generations.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Text-to-Image (T2I) models have recently achieved remarkable success in generating images from textual descriptions. However, challenges still persist in accurately rendering complex scenes where actions and interactions form the primary semantic focus. Our key observation in this work is that T2I models frequently struggle to capture nuanced and often implicit attributes inherent in action depiction, leading to generating images that lack key contextual details. To enable systematic evaluation, we introduce AcT2I, a benchmark designed to evaluate the performance of T2I models in generating images from action-centric prompts. We experimentally validate that leading T2I models do not fare well on AcT2I. We further hypothesize that this shortcoming arises from the incomplete representation of the inherent attributes and contextual dependencies in the training corpora of existing T2I models. We build upon this by developing a training-free, knowledge distillation technique utilizing Large Language Models to address this limitation. Specifically, we enhance prompts by incorporating dense information across three dimensions, observing that injecting prompts with temporal details significantly improves image generation accuracy, with our best model achieving an increase of 72%. Our findings highlight the limitations of current T2I methods in generating images that require complex reasoning and demonstrate that integrating linguistic knowledge in a systematic way can notably advance the generation of nuanced and contextually accurate images.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Contributions</h2>
+      <div class="box">
+        <div class="content">
+          <ul>
+            <li>We develop the <strong>AcT2I</strong> benchmark to evaluate action depiction in T2I models across <strong>25</strong> actions and <strong>100</strong> animals (125 prompts total).</li>
+            <li>Across <strong>5</strong> state-of-the-art T2I models, we find significant limitations in generating accurate and realistic action depictions.</li>
+            <li>We propose a <strong>training-free</strong>, LLM-guided knowledge distillation that injects spatial, temporal, and emotional cues, yielding large gains (e.g., SD-3.5 Large <strong>+73%</strong>).</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="title is-3">Schema & Labels</h2>
+      <div class="box">
+        <div class="content">
+          <ul>
+            <li><strong>Schema:</strong> [animal] [action] [animal] (two entities, one action)</li>
+            <li><strong>Labels:</strong> rarity, emotion, spatial topology, temporal extent; Shannon &gt; 0.82 indicates balance</li>
+            <li><strong>Why animals:</strong> high action affordance, fewer human-image artifacts; isolates action depiction</li>
+            <li><strong>Evaluation:</strong> 3 raters/image; acceptance = majority “Yes”</li>
+          </ul>
+          <table class="table is-fullwidth is-striped is-narrow">
+            <thead>
+              <tr>
+                <th>Axis</th>
+                <th>Levels</th>
+                <th>Why It Matters</th>
+                <th>Example (1-liner)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Rarity</td>
+                <td>1) Frequent<br>2) Rare<br>3) Very Rare</td>
+                <td>Stress-tests long-tail beyond memorized patterns</td>
+                <td>1) F: a Snake attacking a Possum<br>2) R: a Moose attacking a Duck<br>3) VR: an Iguana eating a Cougar</td>
+              </tr>
+              <tr>
+                <td>Emotional</td>
+                <td>1) Aggressive<br>2) Defensive<br>3) Affiliative<br>4) Communicative</td>
+                <td>Affects pose, gaze, and tension cues</td>
+                <td>1) Agg: a Camel eating a Swan<br>2) Def: a Fox fleeing from a Cougar<br>3) Aff: a Rat playing with a Possum<br>4) Com: a Dog barking at a Cat</td>
+              </tr>
+              <tr>
+                <td>Spatial</td>
+                <td>1) Proximal-contact<br>2) Pursuit/Avoid<br>3) Distal</td>
+                <td>Contact & pursuit change layouts</td>
+                <td>1) Prox: a Moose attacking a Duck<br>2) P/A: a Kangaroo chasing a Raccoon<br>3) Distal: a Dog barking at a Cat</td>
+              </tr>
+              <tr>
+                <td>Temporal</td>
+                <td>1) Instantaneous<br>2) Extended</td>
+                <td>Motion/phase disambiguates actions</td>
+                <td>1) Inst: a Goose pecking at a Hamster<br>2) Ex: a Monkey interacting with an Otter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Performance of SOTA T2I models in AcT2I benchmark</h2>
+      <div class="columns is-vcentered">
+        <div class="column is-8 is-offset-2">
+          <div class="box">
+            <div class="content">
+              <ul>
+                <li>Best overall acceptance: <strong>48%</strong> (SD 3.5 Large); none exceed 50%.</li>
+                <li>Niche strengths across models; reptile prompts are hardest.</li>
+                <li>Under Knowledge Distillation, the <strong>temporal</strong> dimension delivers the largest gains.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <div class="box">
+            <h3 class="title is-5">Frequent Error Patterns</h3>
+            <div class="columns is-multiline is-centered">
+              <div class="column is-4 has-text-centered">
+                <h4 class="title is-6">Incomplete depictions</h4>
+                <figure class="image">
+                  <img src="./static/images/incomplete.png" alt="Incomplete depictions: a Beaver grooming a Dog" style="max-width:100%;height:auto;">
+                  <figcaption class="has-text-grey">a Beaver grooming a Dog</figcaption>
+                </figure>
+              </div>
+              <div class="column is-4 has-text-centered">
+                <h4 class="title is-6">Hybridization</h4>
+                <figure class="image">
+                  <img src="./static/images/hybridizatoin.png" alt="Hybridization: a Draco camouflaging near a Cow" style="max-width:100%;height:auto;">
+                  <figcaption class="has-text-grey">a Draco camouflaging near a Cow</figcaption>
+                </figure>
+              </div>
+              <div class="column is-4 has-text-centered">
+                <h4 class="title is-6">Role/context errors</h4>
+                <figure class="image">
+                  <img src="./static/images/contextual_misreprentation.png" alt="Role/context errors: a Buffalo competing for dominance with a Hippopotamus" style="max-width:100%;height:auto;">
+                  <figcaption class="has-text-grey">a Buffalo competing for dominance with a Hippopotamus</figcaption>
+                </figure>
+              </div>
+              <div class="column is-4 has-text-centered">
+                <h4 class="title is-6">Spatial/scale errors</h4>
+                <figure class="image">
+                  <img src="./static/images/spatial.png" alt="Spatial/scale errors: a Boar retaliating against a Giraffe" style="max-width:100%;height:auto;">
+                  <figcaption class="has-text-grey">a Boar retaliating against a Giraffe</figcaption>
+                </figure>
+              </div>
+              <div class="column is-4 has-text-centered">
+                <h4 class="title is-6">Emotional errors</h4>
+                <figure class="image">
+                  <img src="./static/images/emotional.png" alt="Emotional errors: a Turkey pecking at a Cougar" style="max-width:100%;height:auto;">
+                  <figcaption class="has-text-grey">a Turkey pecking at a Cougar</figcaption>
+                </figure>
+              </div>
+              <div class="column is-4 has-text-centered">
+                <h4 class="title is-6">Temporal errors</h4>
+                <figure class="image">
+                  <img src="./static/images/temporal.png" alt="Temporal errors: a Badger retaliating against an Alpaca" style="max-width:100%;height:auto;">
+                  <figcaption class="has-text-grey">a Badger retaliating against an Alpaca</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section class="section">
+    <div class="container is-fluid">
+      <h2 class="title is-3 has-text-centered">LLM-guided Knowledge Distillation</h2>
+      <div class="columns is-centered">
+        <div class="column is-8 has-text-centered">
+          <figure>
+            <img src="./static/images/model_winrate_comparison.png" alt="User preference win rates by knowledge distillation dimension and model" style="max-width:80%;height:auto;">
+            <figcaption>Results of our technique: Temporal &gt; Emotional &gt; Spatial.</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="columns is-multiline">
+        <div class="column is-4">
+          <div class="box">
+            <h3 class="title is-5">Emotional</h3>
+            <div class="content">
+              <ul>
+                <li>Facial/body expressions to convey intent</li>
+                <li>Improves close-range and tensioned scenes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="box">
+            <h3 class="title is-5">Spatial</h3>
+            <div class="content">
+              <ul>
+                <li>Relative position, scale, and depth</li>
+                <li>Helps stationary or vantage-point actions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="box">
+            <h3 class="title is-5">Temporal</h3>
+            <div class="content">
+              <ul>
+                <li>Freeze-frame selection and motion cues</li>
+                <li>Largest gains on competitive and dynamic actions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-12 has-text-centered">
+          <figure>
+            <img src="./static/images/wordclouds.png" alt="Word clouds for Knowledge Distillation prompts: Emotional, Spatial, Temporal" style="max-width:100%;width:100%;height:auto;">
+            <figcaption>Semantic cues emphasized across dimensions.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{malaviya2025act2i,
+  author    = {Malaviya, Vatsal and Chatterjee, Agneet and Patel, Maitreya and Yang, Yezhou and Baral, Chitta},
+  title     = {AcT2I: Evaluating and Improving Action Depiction in Text-to-Image Models},
+  journal   = {arXiv preprint arXiv:2509.16141},
+  year      = {2025}
+}</code></pre>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="https://arxiv.org/pdf/2509.16141v1">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+        <a class="icon-link" href="https://github.com/Vatsal-Malaviya/AcT2I" class="external-link">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
-
