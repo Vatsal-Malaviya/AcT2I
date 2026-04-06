@@ -11,11 +11,27 @@
   </a>
 </p>
 
-This repository hosts the official project page and forthcoming code release for the research project "AcT2I".
+Official code release for **"AcT2I: Evaluating and Improving Action Depiction in Text-to-Image Models"**.
 
-Code, models, and additional materials will be released soon.
+## Installation
 
-If you’d like to follow updates, please watch/star this repository.
+```bash
+pip install -e .            # core dependencies
+pip install -e ".[analysis]" # + spacy, matplotlib, seaborn, plotly
+pip install -e ".[all]"      # everything including dev tools
+```
+
+## Overview
+
+The `act2i` package provides:
+
+- **Prompt Enhancement** (`act2i.prompt`) — LLM-based knowledge distillation to enrich T2I prompts along emotional, spatial, and temporal dimensions.
+- **Image Generation** (`act2i.generate`) — Diffusers-based T2I generation across multiple seeds and prompt variants.
+- **Feature Extraction** (`act2i.features`) — DINOv2 and SigLIP feature extraction for reference image sets.
+- **Evaluation** (`act2i.evaluate`) — CLIPScore, DINOv2 similarity scoring, OWLv2 zero-shot object detection, and classification metrics.
+- **Analysis** (`act2i.analysis`) — Structural NLP analysis of prompt quality.
+
+See `scripts/` for CLI entrypoints.
 
 ## Citation
 

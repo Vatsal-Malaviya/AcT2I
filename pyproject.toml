@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "act2i"
+version = "0.1.0"
+description = "AcT2I: Evaluating and Improving Action Depiction in Text-to-Image Models"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "Vatsal Malaviya"},
+    {name = "Agneet Chatterjee"},
+    {name = "Maitreya Patel"},
+    {name = "Yezhou Yang"},
+    {name = "Chitta Baral"},
+]
+dependencies = [
+    "torch>=2.0",
+    "transformers>=4.36",
+    "diffusers>=0.25",
+    "torchvision>=0.15",
+    "torchmetrics>=1.2",
+    "Pillow>=10.0",
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "scikit-learn>=1.3",
+    "scipy>=1.11",
+    "tqdm>=4.65",
+]
+
+[project.optional-dependencies]
+analysis = [
+    "spacy>=3.7",
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+    "plotly>=5.18",
+]
+dev = [
+    "pytest>=7.4",
+    "black>=23.0",
+    "isort>=5.12",
+    "flake8>=7.0",
+]
+all = ["act2i[analysis,dev]"]
+
+[tool.setuptools.packages.find]
+include = ["act2i*"]
+
+[tool.black]
+line-length = 88
+target-version = ["py39"]
+
+[tool.isort]
+profile = "black"
+force_single_line = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
